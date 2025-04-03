@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad AA2 - Modelo ISO/IEC 15504</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            word-wrap: break-word;
+        }
+        
+        h2 {
+            color: #3498db;
+            text-align: center;
+            font-size: 1.8rem;
+            margin-top: 30px;
+        }
+        
+        .info-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .header {
+                padding: 15px 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+         
+            <h2>NRC: 21720036 - Actividad AA2</h2>
+        </div>
+
+        <h2>Modelo ISO/IEC 15504 (SPICE)</h2>
+        
+        <div class="info-box">
+            <p>El estándar ISO/IEC 15504, también conocido como SPICE (Software Process Improvement and Capability Determination), es un marco para la evaluación de procesos de software y mejora de procesos.</p>
+            <p>El modelo define seis niveles de capacidad para los procesos:</p>
+        </div>
+
+        <div class="mermaid">
+            graph LR
+               A[Nivel 0: Incompleto] --> B[Nivel 1: Realizado]
+               B --> C[Nivel 2: Gestionado]
+               C --> D[Nivel 3: Establecido]
+               D --> E[Nivel 4: Predecible]
+               E --> F[Nivel 5: Optimizado]
+        </div>
+
+        <div class="info-box">
+            <h3 style="text-align: center; color: #2980b9;">Descripción de los niveles:</h3>
+            <ul>
+                <li><strong>Nivel 0 - Incompleto:</strong> El proceso no se implementa o no alcanza sus objetivos.</li>
+                <li><strong>Nivel 1 - Realizado:</strong> El proceso se implementa y alcanza sus objetivos.</li>
+                <li><strong>Nivel 2 - Gestionado:</strong> El proceso se implementa de manera gestionada (planeado, monitoreado y ajustado).</li>
+                <li><strong>Nivel 3 - Establecido:</strong> El proceso se implementa usando principios de ingeniería de software definidos.</li>
+                <li><strong>Nivel 4 - Predecible:</strong> El proceso opera dentro de límites definidos para lograr sus objetivos.</li>
+                <li><strong>Nivel 5 - Optimizado:</strong> El proceso se mejora continuamente para cumplir con los objetivos de negocio actuales y futuros.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
